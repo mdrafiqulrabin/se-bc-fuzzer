@@ -1,0 +1,10 @@
+m1  =  Random Insert
+m2  =  Random Delete
+m3  =  Random Flip
+m4  =  AFL Bit Flips
+m5  =  AFL Byte Flips
+m123  =  Random (Insert + Delete + Flip)
+m45  =   AFL (Bit + Byte) Flips
+m12345  =  Random (Insert + Delete + Flip) + AFL (Bit + Byte) Flips
+mOp  =  Operator Only
+mNum  =  Number Only
