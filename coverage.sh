@@ -30,7 +30,7 @@ function run_gcov_s(){
     sed -i '' 's/% of /,/g' statement.txt
     sed -i '' '/gcov/d' statement.txt
 
-    mv "statement.txt" "/Users/mdrafiqulrabin/Documents/SE-HW1-BC/coverage/statement_$p.txt"
+    mv "statement.txt" "./coverage/statement_$p.txt"
 }
 
 function main(){
@@ -39,10 +39,10 @@ function main(){
     run_gcov_s $1
 }
 
-cd "/Users/mdrafiqulrabin/Documents/SE-HW1-BC/bc-1.07.1/bc"
+cd "./bc-1.07.1/bc"
 
 
 for mt in "m1" "m2" "m3" "m4" "m5" "m123" "m45" "m12345" "mOp" "mNum";
 do
-    main "/Users/mdrafiqulrabin/Documents/SE-HW1-BC/mutate/$mt"
+    main "./mutate/$mt"
 done
